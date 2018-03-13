@@ -1,0 +1,77 @@
+
+.diagram {
+  margin-top: 100px;
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  float: left;
+}
+
+.diagram-item {
+  margin-bottom: 100px;
+  padding: 0 100px;
+  p {
+    line-height: 1.4;
+    margin: 0;
+  }
+}
+
+.diagram-item__title {
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin: 0;
+  &_red {
+    color: #dd0000;
+  }
+  &_orange {
+    color: #F2994A;
+  }
+}
+
+.diagram-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 30%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.diagram-block__pie {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  left: 150px;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.diagram-block__pie {
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: -100px;
+    border-radius: 100px 0 0 100px;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+}

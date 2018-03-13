@@ -1,0 +1,94 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ===========================================================================*/
+/* TITLES */
+h1,
+.h1{
+	font-family: $font-family-title;
+	color: $color-title;
+	line-height: $line-height-title;
+	font-weight: $font-weight-main;
+	margin-top: 0px;
+	@include font-size($font-size-h1);
+}
+
+h2,
+.h2{
+	font-family: $font-family-title;
+	@include font-size($font-size-h2);
+	color: $color-title;
+	line-height: $line-height-title;
+	font-weight: $font-weight-main;
+
+}
+h3,
+.h3{
+	font-family: $font-family-title;
+	@include font-size($font-size-h3);
+	color: $color-black;
+	line-height: $line-height-title;
+	font-weight: $font-weight-main;
+}
+h4,
+.h4{
+	font-family: $font-family-title;
+	@include font-size($font-size-h3);
+	color: $color-black;
+	line-height: $line-height-title;
+	font-weight: $font-weight-main;
+}
+
+/* TEXT */
+.italic{
+	font-style: italic;
+}
+.text_center{
+	text-align: center !important;
+}
+.text_left{
+	text-align: left !important;
+}
+.text_rigth{
+	text-align: right !important;
+}
+.text_bold{
+	font-weight: 700;
+}
+.text_uppercase{
+	text-transform: uppercase;
+}
+.no-upercouse{
+	text-transform: none;
+}
+/* LINKS */
+a {
+	font-family: $font-family-main;
+	@include font-size($font-size-main);
+	color: $color-link;
+	line-height: $line-height-main;
+	font-weight: $font-weight-main;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+a[href^="mailto:"],
+a[href^="tel:"]{
+	color: $color-main;
+	text-decoration: none;
+	&:hover{
+		color: $color-secondary;
+		text-decoration: none;
+	}
+}
+ul,
+ol{
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	li{
+		list-style: none;
+	}
+}
+
+/* end typography */

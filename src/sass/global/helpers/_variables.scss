@@ -1,0 +1,163 @@
+@import "_functions.scss";
+//
+//1. FONTS
+//
+
+//NEW INCLUDE FONTS FROM MIXIN
+@include font-face('Roboto', '../fonts/RobotoThin', 100, normal, eot woff ttf);
+@include font-face('Roboto', '../fonts/RobotoLight', 300, normal, eot  woff ttf);
+@include font-face('Roboto', '../fonts/RobotoRegular', 400, normal, eot  woff ttf);
+@include font-face('Roboto', '../fonts/RobotoMedium', 500, normal, eot  woff ttf);
+@include font-face('Roboto', '../fonts/RobotoBold', 700, normal, eot  woff ttf);
+
+
+
+
+$font-family-main: Roboto, Times, "Times New Roman", serif;
+$font-family-title: $font-family-main;
+
+
+//SIZE
+$font-size-main: 16px;
+$font-size-title: 36px;
+$font-size-h1: $font-size-title;
+$font-size-h2: 24px;
+$font-size-h3: 18px;
+
+// @include font-size();
+
+//LINE HEIGHT
+$line-height-main: 1.2;
+$line-height-title: 1;
+
+//WEIGHT
+$font-weight-main: 400;
+$font-weight-title: 700;
+
+//
+//2. COLORS
+//
+
+$color-main: #416E88;
+$color-secondary: #F2994A;
+$color-text:  #545454;
+$color-black: #000;
+$color-white: #fff;
+
+$color-text: $color-text;
+$color-title: $color-main;
+$color-link: $color-main;
+$color-link-hover: $color-secondary;
+$background-body: $color-white;
+
+//3. BUTTONS
+
+// default
+
+$button: (
+	max-width: 100%,
+	min-width: 155px,
+	//padding: 0 80px,
+	height: 55px,
+	line-height: 1,
+	font-family: $font-family-main,
+	font-size: 14px,
+	font-weight: $font-weight-main,
+	border-width: 1px,
+	border-color: $color-secondary,
+	border-radius: 20px
+);
+
+//width: button(width);
+
+//primary - gold
+$btn-primary-bg: $color-white;
+$btn-primary-bgHover: $color-secondary;
+$btn-primary-bgActive: $color-white;
+
+$btn-primary-color: $color-secondary;
+$btn-primary-colorHover: $color-white;
+$btn-primary-colorActive: $color-white;
+
+//secondary - white
+$btn-secondary-bg: transparent;
+$btn-secondary-bgHover: $color-white;
+$btn-secondary-bgActive: darken($color-white, 10%);
+
+$btn-secondary-color: $color-white;
+$btn-secondary-colorHover: ($color-secondary, 10%);
+$btn-secondary-colorActive: lighten($color-main, 10%);
+
+$btn-secondary-border: btn(border-width) solid $color-white;
+$btn-secondary-borderHover: btn(border-width) solid $color-white;
+$btn-secondary-borderActive: btn(border-width) solid $color-white;
+
+
+//
+//4.FORMS
+//
+
+$form-width: 100%;
+$form-bg: $color-white;
+$group-width:100%;
+$group-margin-bottom: 19px;
+
+//inputs
+$input: (
+	width: 100%,
+	height: 56px,
+	padding: 0 10px 0px 12px,
+	font-family: $font-family-main,
+	font-size: $font-size-main,
+	font-weight: $font-weight-main,
+	font-style: regular,
+	color: $color-main,
+	border: 1px solid $color-main,
+	border-radius: 0,
+	placeholder: $color-main,
+	transition: all .3s,
+	background: transparent
+);
+//width: input(width);
+
+ //textarea
+$textarea: (
+	width: 100%,
+	height: 150px,
+	padding: 12px,
+	font-family: $font-family-main,
+	font-size: $font-size-main,
+	font-weight: $font-weight-main,
+	font-color: $color-main,
+	border: 1px solid $color-main,
+	border-radius: 0,
+	placeholder: $color-main,
+	transition: all .3s,
+	background: transparent
+);
+
+//
+// 5. @MEDIA QUERIES
+//
+$breakpoints: (
+	"phone":   320px,
+	"tablet":       768px,
+	"laptop":      980px,
+	"desktop":      1300px,
+);
+// @include mq('tablet') {}
+
+//
+// 6. Z-INDEX ELEMENTS
+//
+
+$z-layers: (
+	back: -1,
+	default: 1,
+	button: 3,
+	label-error:4,
+	overlay: 4000,
+	modal: 4001
+);
+
+// z-index: z(overlay);

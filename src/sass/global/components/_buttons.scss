@@ -1,0 +1,38 @@
+/* ==========================================================================
+	 BUTTONS
+	 ===========================================================================*/
+.btn,
+.btn[type="button"] {
+  position: relative;
+  z-index: z(button);
+  display: inline-flex;
+  vertical-align: middle;
+  min-width: btn(min-width);
+  max-width: btn(max-width);
+  height: btn(height);
+  font-family: btn(font-family);
+  @include font-size(btn(font-size));
+  line-height: btn(line-height);
+  font-weight: btn(font-weight);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  border-radius: btn(border-radius);
+  background: none;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: inherit;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* end buttons*/

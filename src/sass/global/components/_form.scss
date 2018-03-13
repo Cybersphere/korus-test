@@ -1,0 +1,32 @@
+/*----------------------------------------
+	FORM
+----------------------------------------*/
+.form{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.form-group{
+	position: relative;
+	&:not(:last-child){
+		margin-bottom: $group-margin-bottom;
+	}
+}
+label {
+
+}
+.form-input{
+	//@include placeholderColor($color-white);
+	padding-bottom: 13px;;
+	&:focus {
+	//@include placeholderOpacity(0);
+	}
+}
+/*
+STYLE FOR TEXTAREA
+*/
+textarea{
+	resize: none;
+}
+
+/* end forms */
